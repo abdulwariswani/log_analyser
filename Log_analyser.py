@@ -42,7 +42,7 @@ def IP_count(parsed_log):
         if ip not in result:
             result[ip] = {'count':0 , 'users':set(), 'timestamps': []}
         # update info in nested dictionary
-        result[ip]['count'] += 1 
+        result[ip]['count'] = +1
         result[ip]['users'].add(entry['username']) # set prevents duplicate usernames
         result[ip]['timestamps'].append(entry['timestamp'])
     return result
@@ -52,4 +52,4 @@ def IP_count(parsed_log):
 store_1 = ReadFile()
 store_2 = Regex(store_1)
 store_3 = IP_count(store_2)
-print(store_3)
+print(store_2)

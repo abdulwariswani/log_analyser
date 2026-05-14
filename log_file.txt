@@ -1,9 +1,0 @@
-May 06 08:15:02 server1 sshd[1234]: Failed password for root from 192.168.1.50 port 54321 ssh2
-May 06 08:15:05 server1 sshd[1234]: Failed password for root from 192.168.1.50 port 54321 ssh2
-May 06 08:16:10 server1 sshd[1235]: Accepted password for admin from 10.0.0.5 port 22 ssh2
-May 06 08:20:45 server1 sudo: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt update
-May 06 08:22:12 server1 sshd[1236]: Failed password for invalid user guest from 192.168.1.102 port 49152 ssh2
-May 06 08:25:00 server1 systemd[1]: Started Periodic Command Scheduler (cron).
-May 06 08:30:15 server1 sshd[1237]: Accepted password for dev_user from 10.0.0.15 port 22 ssh2
-May 06 09:01:01 server1 CRON[1238]: (root) CMD ( /usr/local/bin/backup_script.sh )
-May 06 09:15:22 server1 sshd[1239]: Connection closed by authenticating user root 192.168.1.50 [preauth]
