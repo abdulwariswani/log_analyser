@@ -14,7 +14,7 @@ def ReadFile():
             print(f'Error:The file {filename} was not found')
     else:
         print("Usage: python script.py <filename>")
-    return line_list 
+    return line_list  
 
 
 
@@ -34,6 +34,8 @@ def Regex(store_1):
             parsed_log.append(entry)
     return parsed_log 
 
+
+
 # simple IP counter
 def IP_count(parsed_log):
     result = {}
@@ -42,10 +44,12 @@ def IP_count(parsed_log):
         if ip not in result:
             result[ip] = {'count':0 , 'users':set(), 'timestamps': []}
         # update info in nested dictionary
-        result[ip]['count'] = +1
+        result[ip]['count'] += 1
         result[ip]['users'].add(entry['username']) # set prevents duplicate usernames
         result[ip]['timestamps'].append(entry['timestamp'])
     return result
+
+
 
        
 
